@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <!-- External Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certificate.html">Certification</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-4">
+        <div class="text-center">
+            <img src="Umesh photo.jpeg" alt="Umesh Photo" class="rounded-circle" style="max-width: 200px;">
+            <h1 class="my-3">Hi, I'm Umesh Abbanna</h1>
+        </div>
+
+        <!-- Personal Details -->
+         <form>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h3>Personal Details</h3>
+                <div class="container">
+                    <div id="details" class="text-center">
+                        <p><strong>Name:</strong> Umesh Abbanna</p>
+                        <p><strong>DOB:</strong> 11/06/2000</p>
+                        <p><strong>Gender:</strong> Male</p>
+                        <p><strong>Nationality:</strong> Indian</p>
+                        <p><strong>Religion:</strong> Hindu</p>
+                        <p><strong>Languages Known:</strong> Kannada, English, Hindi</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </form>
+        <br>
+
+        <!-- Skills -->
+         <form>
+        <div class="container">
+            <div id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Core Java</li>
+                    <li>Python</li>
+                    <li>HTML, CSS, and JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>MySQL</li>
+                    <li>Spring</li>
+                    <li>Hibernate</li>
+                    <li>JDBC</li>
+                    <li>JEE</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+        <br>
+
+        <!-- Education -->
+         <form>
+        <h3 class="text-center mt-4">Education</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <tr>
+                    <th>SL.NO</th>
+                    <th>Course</th>
+                    <th>College</th>
+                    <th>YOP</th>
+                    <th>Percentage/CGPA</th>
+                    <th>University</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>B.E (CSE)</td>
+                    <td>Govt S K S J T Institute Bangalore</td>
+                    <td>2023</td>
+                    <td>7.41</td>
+                    <td>VTU</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>P U C (Science)</td>
+                    <td>Vishwabharathi P U College Gulbarga</td>
+                    <td>2018</td>
+                    <td>82</td>
+                    <td>KEESB</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>SSLC/10th</td>
+                    <td>Govt High School Kurkunda</td>
+                    <td>2016</td>
+                    <td>79</td>
+                    <td>KEESB</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+        <br>
+
+        <!-- Projects -->
+        <h3 class="text-center mt-4">Projects</h3>
+        <form id="project">
+        <div>
+            <h5>Project-1: Detection of Autism Spectrum Disorder</h5>
+            <p>Technologies: Python, Jupyter Notebook, HTML, CSS</p>
+        </div>
+        <div>
+            <h5>Project-2: Online Voting System</h5>
+            <p>Technologies: HTML, CSS, JavaScript, Oracle</p>
+        </div>
+        <div>
+            <h5>Project-3: Railway Ticket Availability</h5>
+            <p>Technologies: HTML, CSS, JavaScript, Java, Oracle</p>
+        </div>
+    </form>
+        <br>
+        <!-- Contact Form -->
+        <h3 class="text-center mt-4">Contact Me</h3>
+        <form action="https://sheetdb.io/api/v1/q6ns1bizcm2ho" method="POST" id="sheet-db" onsubmit="return validate()">
+            <fieldset id="form">
+                <legend>Contact me:</legend>
+                <div class="mb-3">
+                    <label for="fname" class="form-label">First name:</label>
+                    <label for="fname" style="color: red;">*</label>
+                    <input type="text" class="form-control" placeholder="Enter your first name" name="data[Fname]" id="fname">
+                    <span id="msg" style="color: red;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="lname" class="form-label">Last name:</label>
+                    <label for="lname" style="color: red;">*</label>
+                    <input type="text" class="form-control" placeholder="Enter your last name" name="data[Lname]" id="lname">
+                    <span id="msg1" style="color: red;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <label for="email" style="color: red;">*</label>
+                    <input type="email" class="form-control" placeholder="Enter your Email" name="data[Email]" id="email">
+                    <span id="msg2" style="color: red;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phnum" class="form-label">Phone Number:</label>
+                    <label for="phnum" style="color: red;">*</label>
+                    <input type="text" class="form-control" placeholder="Enter your Phone Number" name="data[Phone Number]" id="phnum">
+                    <span id="msg3" style="color: red;"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <label for="message" style="color: red;">*</label>
+                    <input type="text" class="form-control" placeholder="Enter your message" name="data[Message]" id="message">
+                    <span id="msg4" style="color: red;"></span>
+                </div>
+
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-4">
+        <a href="https://www.linkedin.com/in/umesh-abbanna-14b383225" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Umesh-kalal" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://instagram.com/umesh_kalal_?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/UmeshKa63123304?t=v_4MaghOM8Hgv8zSXobDGw&s=08" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/umesh.kalal.501?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.threads.net/@umesh_kalal_" target="_blank"><i class="fa-brands fa-threads"></i></a>
+        <br><br>
+        <div class="map-container">
+            <iframe 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                style="border:0" 
+                allowfullscreen 
+                aria-hidden="false" 
+                tabindex="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62248.176032423286!2d77.6761553671875!3d12.960936300000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13e45933e8b5%3A0x3327715f9e199377!2sMarathahalli%2C%20Bengaluru%2C%20Karnataka%20600037!5e0!3m2!1sen!2sin!4v1698606235401!5m2!1sen!2sin">
+            </iframe>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
