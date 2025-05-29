@@ -39,29 +39,7 @@ footer i {
     font-size: 30px;
     color: navy;
 }
-@media (max-width: 768px) {
-            table, tbody, th, td, tr {
-                display: block;
-            }
-            table tr {
-                margin-bottom: 10px;
-                border: 1px solid #ddd;
-            }
-            table td {
-                text-align: left;
-                padding-left: 10px;
-            }
-            fieldset, form {
-                width: 100%;
-            }
-        }
 
-
-
-
-
-
-/* ..................
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -74,4 +52,4 @@ footer i {
         font-size: 25px;
         padding: 10px;
     }
-} */
+} 
