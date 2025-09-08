@@ -1,0 +1,41 @@
+h3 {
+    text-align: center;
+    
+    font-size: 30px;
+    text-decoration: underline;
+}
+p {
+    font-size: 1.2rem;
+}
+form {
+    font-size: 1rem;
+    background-color: burlywood;
+    border: 1px solid red;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#two {
+    background-color: cornsilk;
+    border: 1px solid red;
+}
+#three {
+    background-color: bisque;
+    border: 1px solid red;
+}
+body {
+    background-image: url('Top6 Software Development Functions Crucial to your Business in 20191542795654826.avif');
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    h3 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 1rem;
+    }
+    form {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

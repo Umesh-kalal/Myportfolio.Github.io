@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Railway Ticket Availability</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <div class="max-w-xl mx-auto mt-10 bg-white p-6 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold mb-4 text-center">Train Ticket Availability Checker</h2>
+    
+    <form id="checkForm" class="space-y-4">
+      <div>
+        <label class="block font-medium">Source Station Code (e.g., SBC)</label>
+        <input type="text" id="source" required class="w-full p-2 border rounded" />
+      </div>
+
+      <div>
+        <label class="block font-medium">Destination Station Code (e.g., YPR)</label>
+        <input type="text" id="destination" required class="w-full p-2 border rounded" />
+      </div>
+
+      <div>
+        <label class="block font-medium">Train Number</label>
+        <input type="text" id="trainNumber" required class="w-full p-2 border rounded" />
+      </div>
+
+      <div>
+        <label class="block font-medium">Date of Journey</label>
+        <input type="date" id="date" required class="w-full p-2 border rounded" />
+      </div>
+
+      <div>
+        <label class="block font-medium">Class (e.g., SL, 3A, 2A)</label>
+        <input type="text" id="class" required class="w-full p-2 border rounded" />
+      </div>
+
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+        Check Availability
+      </button>
+    </form>
+
+    <div id="result" class="mt-6 text-center text-green-700 font-medium"></div>
+  </div>
+
+  <script>
+    document.getElementById('checkForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Collect input values
+      const source = document.getElementById('source').value;
+      const destination = document.getElementById('destination').value;
+      const trainNumber = document.getElementById('trainNumber').value;
+      const date = document.getElementById('date').value;
+      const travelClass = document.getElementById('class').value;
+
+      // Dummy display - Replace with API integration
+      document.getElementById('result').innerText = `Checking availability for Train ${trainNumber} from ${source} to ${destination} on ${date} in ${travelClass} class... (API response goes here)`;
+    });
+  </script>
+
+</body>
+</html>
